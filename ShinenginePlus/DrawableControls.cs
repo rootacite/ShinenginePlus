@@ -62,7 +62,6 @@ namespace ShinenginePlus.DrawableControls
     sealed public class VideoSource : ImageSource
     {
         VideoStreamDecoder Stream = null;
-        bool exit_flag = false;
         WICBitmap PrePairedFrame = null;
         ManualResetEvent res_decode = new ManualResetEvent(false);
         public double FrameRate { get; private set; } = 0;

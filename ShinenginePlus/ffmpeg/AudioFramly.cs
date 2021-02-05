@@ -98,7 +98,6 @@ namespace ShinenginePlus
             var _au_convert_ctx = au_convert_ctx;
             var _pcodecContext_A = pcodecContext_A;
 
-            var frameNumber = 0;
             var pAudioFrame = ffmpeg.av_frame_alloc();
 
             byte* out_buffer = (byte*)Marshal.AllocHGlobal(19200 * 2);

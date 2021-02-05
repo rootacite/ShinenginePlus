@@ -10,7 +10,7 @@ namespace ShinenginePlus.Media
     {
         private const string LD_LIBRARY_PATH = "LD_LIBRARY_PATH";
 
-        internal static void RegisterFFmpegBinaries()
+        public static void RegisterFFmpegBinaries()
         {
             switch (Environment.OSVersion.Platform)
             {
@@ -60,6 +60,6 @@ namespace ShinenginePlus.Media
         }
 
         [DllImport("kernel32", SetLastError = true)]
-        private static extern bool SetDllDirectory(string lpPathName);
+        public static extern bool SetDllDirectory(string lpPathName);
     }
 }
