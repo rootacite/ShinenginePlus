@@ -4,7 +4,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x86</Platforms>
-    <Version>1.2.0</Version>
+    <Version>1.3.0</Version>
     <Authors>Acite</Authors>
     <Company>Acite</Company>
     <Copyright>Acite, All right reserved</Copyright>
