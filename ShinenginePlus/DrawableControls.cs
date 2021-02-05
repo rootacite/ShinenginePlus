@@ -879,6 +879,9 @@ namespace ShinenginePlus.DrawableControls
 
     public abstract class Layer : IDrawable
     {
+        public bool Freezing { get; set; } = false;
+
+
         public bool IsEnableMouse { get; set; } = true;
         public delegate Effect EffectProc(Image Input, DeviceContext dc);
         private EffectProc Effecting = null;
@@ -963,6 +966,7 @@ namespace ShinenginePlus.DrawableControls
         public delegate bool UpdateProcess();
         public void Update()
         {
+            if (Freezing) return;
             var RCP = RenderGroup.ToArray();
 
             foreach (var i in RCP)
