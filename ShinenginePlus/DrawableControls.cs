@@ -106,8 +106,6 @@ namespace ShinenginePlus.DrawableControls
             Stream = new VideoStreamDecoder(path);
             PixelSize = new Size(Stream.FrameSize.Width, Stream.FrameSize.Height);
 
-            DecodeAsync();
-
             FrameRate = (double)Stream.pStream->avg_frame_rate.num/ (double)Stream.pStream->avg_frame_rate.den;
 
         }
