@@ -20,7 +20,7 @@ namespace ShinenginePlus
         public IntPtr data;
         public double time_base;
     }
-    unsafe class AudioFramly
+    public unsafe class AudioFramly
     {
         private AVFormatContext* pFormatContext;
         private AVCodecContext* pcodecContext_A;

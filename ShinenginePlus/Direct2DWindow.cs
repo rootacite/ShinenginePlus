@@ -279,7 +279,7 @@ namespace ShinenginePlus
         }
         #endregion
     }
-    static class Direct2DHelper
+    public static class Direct2DHelper
     {
         public static WICBitmap LoadBitmap(string rele_path)
         {

@@ -4,6 +4,10 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x86</Platforms>
+    <Version>1.1.0</Version>
+    <Authors>Acite</Authors>
+    <Company>Acite</Company>
+    <Copyright>Acite, All right reserved</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
