@@ -793,6 +793,7 @@ namespace ShinenginePlus.DrawableControls
         {
             get
             {
+                if (_father == null || IsShowed == false) return new Point(-1, -1);
 
                 double mouse_x_rate = (double)_father.CursorPos.X / (double)_father.Size.Width;
                 double mouse_y_rate = (double)_father.CursorPos.Y / (double)_father.Size.Height;
