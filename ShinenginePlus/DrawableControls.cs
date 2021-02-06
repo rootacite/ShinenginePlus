@@ -926,12 +926,13 @@ namespace ShinenginePlus.DrawableControls
                 {
                     loadBp2.CopyFromBitmap(loadBp);
                     var resultEff = Effecting(loadBp2, HostDC);
-                    var resultIm = resultEff.Output;
+                   
                     if (resultEff == null)
                     {
                         Effecting = null;
                         goto tag;
                     }
+                    var resultIm = resultEff.Output;
                     HostDC.BeginDraw();
                     HostDC.Clear(Color);
                     HostDC.DrawImage(resultIm, new RawVector2(0, 0), null, SharpDX.Direct2D1.InterpolationMode.Linear, CompositeMode.SourceOver);
